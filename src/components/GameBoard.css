@@ -1,0 +1,21 @@
+.game-board {
+  display: inline-block;
+  border: 3px solid #808080;
+  border-style: inset;
+  background: #c0c0c0;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.game-row {
+  display: flex;
+  line-height: 0;
+}
+
+.game-row:not(:last-child) {
+  margin-bottom: -2px;
+}
+
+.game-row .cell:not(:last-child) {
+  margin-right: -2px;
+}

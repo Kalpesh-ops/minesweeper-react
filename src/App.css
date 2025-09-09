@@ -1,0 +1,36 @@
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.app h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.instructions {
+  margin-top: 30px;
+  text-align: left;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.instructions p {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.instructions ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin: 5px 0;
+}

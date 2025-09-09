@@ -1,0 +1,112 @@
+.game-controls {
+  margin-bottom: 20px;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #c0c0c0;
+  border: 3px solid #808080;
+  border-style: inset;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.counter-label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: #333;
+}
+
+.counter-value {
+  background: #000;
+  color: #ff0000;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 4px 8px;
+  border: 1px solid #333;
+  border-style: inset;
+  min-width: 40px;
+  text-align: center;
+}
+
+.new-game-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border: 3px solid #808080;
+  border-style: outset;
+  background: #c0c0c0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.1s ease;
+}
+
+.new-game-btn:hover {
+  background: #d0d0d0;
+}
+
+.new-game-btn:active {
+  border-style: inset;
+}
+
+.difficulty-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.difficulty-controls label {
+  font-weight: bold;
+  color: #333;
+}
+
+.difficulty-select {
+  padding: 8px 12px;
+  border: 2px solid #808080;
+  border-style: inset;
+  background: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.difficulty-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.game-message {
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.win-message {
+  background: #d4edda;
+  color: #155724;
+  border: 2px solid #c3e6cb;
+}
+
+.lose-message {
+  background: #f8d7da;
+  color: #721c24;
+  border: 2px solid #f5c6cb;
+}
