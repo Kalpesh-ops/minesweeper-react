@@ -1,10 +1,11 @@
 .game-board {
   display: inline-block;
-  border: 3px solid #808080;
-  border-style: inset;
-  background: #c0c0c0;
-  padding: 10px;
-  margin: 20px 0;
+  background: var(--bg-primary);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 1rem 0;
 }
 
 .game-row {
@@ -12,10 +13,25 @@
   line-height: 0;
 }
 
-.game-row:not(:last-child) {
-  margin-bottom: -2px;
+.game-row .cell:not(:last-child) {
+  margin-right: -2px; /* Overlap borders for seamless grid */
 }
 
-.game-row .cell:not(:last-child) {
-  margin-right: -2px;
+.game-row:not(:last-child) .cell {
+  margin-bottom: -2px; /* Overlap borders vertically */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .game-board {
+    padding: 12px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-board {
+    padding: 8px;
+    margin: 0.5rem 0;
+  }
 }

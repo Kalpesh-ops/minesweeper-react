@@ -1,0 +1,126 @@
+/* Statistics modal styles */
+
+.statistics-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.statistics-content {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  width: min(800px, 92vw);
+  max-height: 85vh;
+  overflow: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  border: 1px solid var(--border-light);
+}
+
+.statistics-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.statistics-header h2 {
+  margin: 0;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+.statistics-body {
+  padding: 18px 20px 24px;
+}
+
+.stats-section {
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.stat-item {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.stat-label {
+  display: block;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.difficulty-stats {
+  margin-bottom: 16px;
+}
+
+.difficulty-title {
+  margin: 12px 0 8px;
+}
+
+.streak {
+  margin-left: 8px;
+  font-size: 12px;
+  background: #fff3cd;
+  color: #856404;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #ffeeba;
+}
+
+.difficulty-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.stats-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-play {
+  margin: 0;
+  color: #6c757d;
+}
+
+.reset-stats-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reset-stats-btn:hover {
+  background: #c82333;
+}
+
